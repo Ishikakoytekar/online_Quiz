@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <div class="home-box custom-box ">
+        <h1>Online Quiz</h1>
+       <div class="main">
+           <form>
+              <div id="name">
+               <h2 class="name">Name</h2>
+               <input class="names" type="text" name="name"><br>
+               <h2 class="name">Roll No</h2>
+               <input class="rollno" type="text" name="roll_no"><br>
+               <h2 class="name">Batch</h2>
+               <input class="batch" type="text" name="batch"><br>
+               <h2 class="name">Phone</h2>
+               <input class="code" type="text" name="phone_code"><br>
+               <h2 class="name">Email</h2>
+               <input class="email" type="text" name="email"><br>
+              </div>
+            </form>
+       </div>
+        <button type="button" class="btn" onclick="startQuiz()">Start Quiz</button>
+    </div>
+    <div class="quiz custom-box hide">
+        <div class="qno">
+           
+        </div>
+        <div class="qtext">
+         
+        </div>
+        <div class= "option-container">
+           
+        </div>
+        <div class="nextq-btn">
+            <button type="button" class="btn" onclick="next()">Next</button>
+        </div>
+       
+    </div>
+    <div class="result-box custom-box hide">
+        <h1>Result</h1>
+        <table>
+          
+            <tr>
+                <td>Total Score</td>
+                <td><span class="total-score"></span></td>
+            </tr>
+        </table>
+        <button type="button" class="btn" onclick="exit()">Exit</button>
+        <button type="button" class="btn" onclick="home()">Home</button>
+    </div> 
+    
+
+    <script src="quiz.js"></script>
+    <script src="project.js"></script>
+  
+
+</body>
+</html>
